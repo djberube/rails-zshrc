@@ -1,0 +1,31 @@
+# Ported from somebody elses BASH implementation; 
+# at this point, no idea who he was, but if anyone knows, 
+# drop me a line and I'll add credit appropriately.
+
+alias r="until (test -e app/views/layouts); do cd ..;done"
+alias rpwd="zsh -c 'until (test -e app/views/layouts); do cd ..;done; pwd'"
+alias ra="r; cd app;"
+alias ram="r; cd app/models"
+alias rav="r; cd app/views"
+alias ravl="r; cd app/views/layouts"
+alias rah="r; cd app/helpers"
+alias rac="r; cd app/controllers"
+alias rps="r; cd public/stylesheets"
+alias rdm="r; cd db/migrate"
+alias rpj="r; cd public/javascripts"
+alias rl="r; cd lib"
+alias rlg="r; cd log"
+alias rc="r; cd config"
+alias rd="r; cd doc"
+alias rvp="r; cd vendor/plugins"
+alias rt="r; cd test"
+alias rtu="r; cd test/unit"
+alias rtm="r; cd test/mocks"
+alias rtfx="r; cd test/fixtures"
+alias rtfn="r; cd test/functional"
+alias rti="r; cd test/integration"
+alias rsc="r; ruby script/console"
+alias rss="r; ruby script/server"
+alias rc="ruby script/console"
+alias rdbm="rake db:migrate"
+
