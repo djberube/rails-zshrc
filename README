@@ -1,0 +1,32 @@
+Installation
+============
+
+Place .zshrc-rails in your $HOME and place the following line in your .zshrc:
+
+source $HOME/rails-zshrc/.zshrc-rails
+
+Usage
+=====
+
+You get a few convenient aliases; rss, for example, is the same as ruby script/server, rsc is ruby script/console, and rdb is rake db:migrate.
+
+Additionally, you get an entire class of acronym'd directory changing commands; for example:
+
+cd my_rails_application
+rpj 
+# Now you're in my_rails_application/public/javascript
+rav
+# Now you're in my_rails_application/app/views
+r
+# Now you're back to my_rails_application
+
+This lets you quickly traverse your Rails treet. Additionally, there's an rpwd alias that returns the Rails root path, so you can do stuff like this:
+
+vim `rpwd`/config/environment.rb 
+
+The above commands all work anywhere inside of a Rails application; they'll twitch out if used outside of a Rails application, though, and you'll have to kill them with CTRL-C. (I may fix this in a later release, but I don't really have a problem with it.
+
+Credits
+=======
+Somebody else originally wrote the directory aliases for BASH; I ported a (modified) version to zsh.
+
