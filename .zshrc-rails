@@ -26,6 +26,8 @@ alias rtfn="r; cd test/functional"
 alias rti="r; cd test/integration"
 alias rsc="r; ruby script/console"
 alias rss="r; ruby script/server"
+alias rssdn="r; ruby script/server > /dev/null"
 alias rc="ruby script/console"
 alias rdbm="rake db:migrate"
+alias rr="rake routes"
 

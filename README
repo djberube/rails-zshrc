@@ -20,12 +20,14 @@ rav
 r
 # Now you're back to my_rails_application
 
-This lets you quickly traverse your Rails treet. Additionally, there's an rpwd alias that returns the Rails root path, so you can do stuff like this:
+This lets you quickly traverse your Rails tree. Additionally, there's an rpwd alias that returns the Rails root path, so you can do stuff like this:
 
 vim `rpwd`/config/environment.rb 
 
 The above commands all work anywhere inside of a Rails application; they'll twitch out if used outside of a Rails application, though, and you'll have to kill them with CTRL-C. (I may fix this in a later release, but I don't really have a problem with it.
 
+There are a number of other aliases; rsc is ./script/console, rr is rake routes, rdbm is rake db:migrate, rss is ./script/server, etc. View the file for the complete list. Suggestions and additions are highly appreciated; feel free to email me at djberube@berubeconsulting.com or to message me and/or send pull requests on GitHub. 
+ 
 Credits
 =======
 Somebody else originally wrote the directory aliases for BASH; I ported a (modified) version to zsh.
