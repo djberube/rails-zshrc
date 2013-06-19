@@ -2,7 +2,7 @@
 # at this point, no idea who he was, but if anyone knows, 
 # drop me a line and I'll add credit appropriately.
 
-alias r="until (test -e config/routes); do cd ..;done"
+alias r="until (test -e config/routes.rb); do cd ..;done"
 alias rpwd="zsh -c 'until (test -e config/routes.rb); do cd ..;done; pwd'"
 alias ra="r; cd app;"
 alias ram="r; cd app/models"
